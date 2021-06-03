@@ -1,0 +1,24 @@
+/**
+ * Main Styles.
+ */
+
+// sass main.scss ../style.min.css --style=compressed
+
+$breakpoint-tablet: 650px;
+$breakpoint-desktop: 1024px;
+
+$theme-main-color: #;
+
+
+$theme-main-font: '';
+
+$img-directory: "img";
+
+
+@import '_normalize';
+@import '_fonts';
+@import '_skeleton';
+@import '_body-changes';
+@import '_header';
+@import '_footer';
+@import '_pages';

@@ -1,0 +1,209 @@
+/**
+* Styles for pages.
+*/
+body {
+	&#fake-home {
+		background-color: $ ;
+
+		main {
+			color: $ ;
+
+			img {
+				max-width: 100%;
+				margin: 0 auto;
+				display: block;
+			}
+
+			a {
+				margin: 0 auto;
+				display: block;
+				margin-top: 50px;
+				width: 160px;
+				font-size: 18px;
+				text-align: center;
+				border: 2px $  solid;
+				padding: 15px;
+				border-radius: 18px;
+
+				&:hover {
+					background: #480d0d63;
+				}
+			}
+		}
+	}
+
+	main {
+		max-width: 100%;
+		margin: 60px auto 0;
+		color: $ ;
+
+		section {
+			min-height: 400px;
+			padding: 25px;
+
+			article {
+
+				h1, h2 {
+					color: $;
+					text-align: center;
+				}
+
+				p {
+					font-size: 18px;
+					color: $ ;
+
+					del {
+						text-decoration: line-through;
+					}
+
+					strong {
+						color: $ ;
+					}
+				}
+			}
+
+
+			&#inicio {
+				padding-top: 60px;
+				background-color: $ ;
+
+				p {
+					text-align: center;
+					font-size: 20px;
+					width: 218px;
+					margin: 0 auto;
+				}
+
+				img {
+					max-width: 364px;
+					width: 100%;
+					margin: 0 auto;
+					display: block;
+					margin-bottom: 20px;
+				}
+			}
+
+			&#presentacion {
+				background-color: $ ;
+
+				img {
+					height: 400px;
+					width: auto;
+					padding: 10px;
+
+					&.derecha {
+						float: right;
+					}
+
+					&.izquierda {
+						float: left;
+					}
+				}
+			}
+
+			&#musica {
+				background-color: $ ;
+
+				article {
+					p {
+						color: $ ;
+						text-align: center;
+					}
+				}
+
+				iframe {
+					margin: 0 auto;
+					display: block;
+				}
+			}
+
+			&#datos-extras {
+				background-color: $;
+
+				article {
+					ul {
+						list-style-type: decimal;
+						color: $ ;
+						font-size: 18px;
+
+						li {
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $breakpoint-tablet) {
+	body {
+		&#fake-home {
+			main {
+				img {
+					max-width: 643px;
+				}
+
+				a {
+					width: 210px;
+					font-size: 24px;
+				}
+			}
+		}
+
+		main {
+			max-width: 100%;
+			margin: 45px auto 0;
+
+			section {
+				min-height: 680px;
+
+				article {
+
+					h1, h2 {
+						color: $ ;
+						text-align: center;
+					}
+
+					p {
+						font-size: 24px;
+					}
+				}
+
+				&#inicio {
+					p {
+						font-size: 36px;
+						width: auto;
+					}
+
+					img {
+						margin-bottom: 60px;
+						max-width: 492px;
+					}
+				}
+
+				&#presentacion {
+					img {
+						height: 440px;
+						width: auto;
+						padding: 20px;
+					}
+				}
+
+				&#musica {
+					iframe {
+						width: 500px;
+					}
+				}
+
+				&#datos-extras {
+					article {
+						ul {
+							font-size: 24px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
